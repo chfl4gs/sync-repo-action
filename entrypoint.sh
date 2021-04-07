@@ -15,7 +15,7 @@ setup_ssh() {
     # Here is a pitfall if using ~/.ssh instead of /root/.ssh
     mkdir /root/.ssh
     echo "$INPUT_SSH_PRIVATE_KEY" > /root/.ssh/id_rsa
-    chmod 600 /root/.ssh/id_rsa
+    chmod 400 /root/.ssh/id_rsa
 }
 
 push_code() {
